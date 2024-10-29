@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Workout Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <h1 id="title">Workout Survey Form</h1>
+    <p id="description">Please take a few minutes to tell us more about you and your preferences</p>
+    <form id="survey-form" method="post" action="">
+      <fieldset>
+      <label id="name-label" for="name" >Enter your name:
+      <input id="name" type="text" placeholder="Kris Bobby" maxlength="20" required>
+      </label>
+      <label id="email-label" for="email">Enter your email:
+      <input id="email" type="email" placeholder="1234@gmail.com" required>
+      </label>
+      <label id="number-label" for="number">Enter your age:
+      <input id="number" type="number" min="12" max="68" placeholder="12-68" required>
+      </label>
+      </fieldset>
+
+  <fieldset>
+    <label for="dropdown">How regulary do you workout:
+      <select id="dropdown">
+        <option>select</option>
+        <option>Atleast once a day</option>
+        <option>Atleast once a week</option>
+        <option>Atleast once a month</option>
+        <option>Don't remeber</option>
+      </select>
+      </label>
+
+        <p class="trainer">Do you prefer a personal trainer? </p>
+        <label for="have">
+      <input  id="have" type="radio" value="Yes" name="select1">Yes
+      </label>
+      <label for="not">
+      <input id="not" type="radio" value="No" name="select1">No
+      </label>
+      <label for="no-need">
+      <input id="no-need" type="radio" value="Don't need one" name="select2">Don't need one
+      </label>
+      <label for="may-have">
+      <input  id="may-have" type="radio" value="May-need" name="select2">May need one in the future
+      </label>
+      </fieldset>
+    
+      
+      <fieldset>
+      <label> Gym or home workout, which suits you well and why<textarea></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="terms">
+      <input class="conditions" id="terms" type="checkbox" value="checked"> I agree to the <a href="" >terms and conditions.</a>
+      </label>
+      <label for="mails">
+      <input class="receive" id="mails" type="checkbox" value="checked"> I'd like to receive emails and <a href="" >newsletters.</a>
+      </label>
+      </fieldset>
+      
+      <button id="submit" type="submit" value="Submit"> Submit </button>
+    </form>
+  </body>
+</html>
